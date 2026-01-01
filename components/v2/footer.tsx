@@ -2,42 +2,14 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import {
-  Twitter,
-  Instagram,
-  Linkedin,
-  Disc as Discord,
-  Mail,
-  MessageCircle,
-} from "lucide-react";
-
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
+import WhatsappV2Icon from "../whatsappV2-icon";
+import XIcon from "../x";
+import TictokIcon from "../tictok";
+import DiscordIcon from "../discord";
+import GmailIcon from "../gmail";
 
-// Custom icons if not in Lucide or specific styling needed
-const TicTokIcon = () => (
-  <svg
-    viewBox="0 0 24 24"
-    fill="currentColor"
-    height="1em"
-    width="1em"
-    className="h-5 w-5"
-  >
-    <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-5.2 1.74 2.89 2.89 0 012.31-4.64 2.93 2.93 0 01.88.13V9.4a6.84 6.84 0 00-1-.05A6.33 6.33 0 005 20.1a6.34 6.34 0 0010.86-4.43v-7a8.16 8.16 0 004.77 1.52v-3.4a4.85 4.85 0 01-1-.1z" />
-  </svg>
-);
-
-const XIcon = () => (
-  <svg
-    viewBox="0 0 24 24"
-    fill="currentColor"
-    height="1em"
-    width="1em"
-    className="h-5 w-5"
-  >
-    <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z" />
-  </svg>
-);
 
 export function Footer() {
   const { theme, setTheme } = useTheme();
@@ -49,9 +21,9 @@ export function Footer() {
   }, []);
 
   return (
-    <footer className="bg-gradient-to-b from-[#EFEFF1] dark:from-[#202024] dark:to-[#0B1837] to-[#CCD9F8] pt-20 pb-8 px-4 overflow-hidden text-[#111528] dark:text-white">
-      <div className="container mx-auto">
-        <div className="flex flex-col lg:flex-row justify-between items-start gap-12 mb-24">
+    <footer className="bg-gradient-to-b from-[#EFEFF1] dark:from-[#202024] dark:to-[#0B1837] to-[#CCD9F8] md:pt-20 pb-8 px-4 overflow-hidden text-[#111528] dark:text-white">
+      <div className="container mx-auto ">
+        <div className="flex flex-col lg:flex-row justify-between items-start md:gap-12 mb-5 md:mb-24">
           <div className="lg:w-1/2">
             <h2 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
               Unlock Borderless Payments <br /> With Chainpaye
@@ -66,7 +38,7 @@ export function Footer() {
             </p>
             <Link
               href="#"
-              className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-full font-bold text-sm transition-colors whitespace-nowrap flex items-center gap-2"
+              className="bg-[#003DFF] dark:bg-[#7DA2FF] dark:text-[#00174F] text-white px-8 py-3 rounded-md font-bold text-sm transition-colors whitespace-nowrap flex items-center gap-2"
             >
               Get in touch with us →
             </Link>
@@ -74,15 +46,15 @@ export function Footer() {
         </div>
 
         {/* Middle: Links & Socials */}
-        <div className="flex flex-col md:flex-row justify-between items-center mb-12 gap-8 pt-10">
-          <div className="flex gap-8 text-sm font-medium text-gray-600 dark:text-gray-400">
-            <a href="#" className="hover:text-blue-600 transition-colors">
+        <div className="flex flex-col-reverse md:flex-row justify-between md:items-center mb-12 gap-4 md:gap-8 pt-4  md:dark:border-[#4C4C4C] md:dark:border-t ">
+          <div className="flex gap-8 text-sm font-medium text-gray-[#5A5F73] dark:text-[#BDBFC7] flex-col md:flex-row md:border-none pt-3 md:pt-0 dark:border-[#4C4C4C] dark:border-t">
+            <a href="#" className=" transition-colors">
               Solutions
             </a>
-            <a href="#" className="hover:text-blue-600 transition-colors">
+            <a href="#" className=" transition-colors">
               Developers
             </a>
-            <a href="#" className="hover:text-blue-600 transition-colors">
+            <a href="#" className=" transition-colors">
               Use cases
             </a>
             <div className="flex items-center gap-2">
@@ -107,19 +79,19 @@ export function Footer() {
 
           <div className="flex gap-6 text-gray-600 dark:text-gray-400">
             <a href="#" className="hover:text-green-600 transition-colors">
-              <MessageCircle className="h-6 w-6" /> {/* WhatsApp/Chat */}
+              <WhatsappV2Icon />
             </a>
             <a href="#" className="hover:text-black transition-colors">
               <XIcon />
             </a>
             <a href="#" className="hover:text-black transition-colors">
-              <TicTokIcon />
+              <TictokIcon />
             </a>
             <a href="#" className="hover:text-purple-600 transition-colors">
-              <Discord className="h-6 w-6" />
+              <DiscordIcon />
             </a>
-            <a href="#" className="hover:text-red-500 transition-colors">
-              <Mail className="h-6 w-6" />
+            <a href="#">
+              <GmailIcon />
             </a>
           </div>
         </div>

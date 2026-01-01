@@ -15,6 +15,7 @@ export function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setMounted(true);
   }, []);
 
@@ -110,6 +111,13 @@ export function Navbar() {
               onClick={() => setMobileMenuOpen(false)}
             >
               About
+            </Link>
+            <Link
+              href="#"
+              className="flex items-center gap-2 rounded-lg bg-[#003DFF] dark:text-[#00174F] dark:bg-[#7DA2FF] px-8 py-3.5 text-base font-medium text-[#FFFFFF] transition-colors"
+            >
+              <WhatsappIcon />
+              Start on WhatsApp
             </Link>
           </div>
         </div>
