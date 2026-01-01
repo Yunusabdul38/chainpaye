@@ -310,14 +310,8 @@ export function Features() {
                       : "opacity-0 -top-full"
                   }`}
                 >
-                  <div className="w-10 h-10 rounded-full overflow-hidden bg-gray-100 shrink-0">
-                    <Image
-                      src="/assets/avatar.png"
-                      alt="Bethy"
-                      width={40}
-                      height={40}
-                      className="object-cover"
-                    />
+                  <div className="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center shrink-0 text-blue-600 font-bold text-xs">
+                    B
                   </div>
                   <div className="flex-1 min-w-0">
                     <div className="text-xs text-gray-500">
