@@ -19,7 +19,7 @@ const THEMES = [
   {
     id: "gold",
     bg: "bg-[#C68744]",
-    cardImage: "/assets/Gold V1.png",
+    cardImage: "/assets/GOLD V1.png",
     textColor: "text-white",
     subTextColor: "text-white/80",
     gridColor: "bg-[#B5783A]",
