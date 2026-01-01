@@ -115,7 +115,10 @@ export function Features() {
   }, []);
 
   return (
-    <section className="pt-24 pb-8 md:py-24 px-4 bg-[#EFEFF1] dark:bg-[#202024]">
+    <section
+      id="about"
+      className="pt-24 pb-8 md:py-24 px-4 bg-[#EFEFF1] dark:bg-[#202024]"
+    >
       <div className="container mx-auto max-w-112.5  md:max-w-7xl">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-bold mb-4 text-[#111528] dark:text-white">

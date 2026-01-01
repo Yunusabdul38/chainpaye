@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 import clsx from "clsx";
@@ -9,7 +10,7 @@ const THEMES = [
   {
     id: "purple",
     bg: "bg-[#30002]",
-    cardImage: "/assets/purple.png",
+    cardImage: "/assets/Solaris V2.png",
     textColor: "text-[#111528]",
     subTextColor: "text-[#5A5F73]",
     gridColor: "bg-[#E5E5E5]",
@@ -18,7 +19,7 @@ const THEMES = [
   {
     id: "gold",
     bg: "bg-[#C68744]",
-    cardImage: "/assets/gold.png",
+    cardImage: "/assets/Gold V1.png",
     textColor: "text-white",
     subTextColor: "text-white/80",
     gridColor: "bg-[#B5783A]",
@@ -27,7 +28,7 @@ const THEMES = [
   {
     id: "blue",
     bg: "bg-[#0047AB]",
-    cardImage: "/assets/blue.png",
+    cardImage: "/assets/Platinum V2.png",
     textColor: "text-white",
     subTextColor: "text-white/80",
     gridColor: "bg-[#00388F]",
@@ -48,10 +49,10 @@ export function VisaCard() {
   const theme = THEMES[currentIndex];
 
   return (
-    <section className="flex justify-center">
+    <section id="visacard" className="flex justify-center">
       <div
         className={clsx(
-          "relative xl:container mx-auto p-4 md:rounded-2xl md:max-h-[528px] overflow-hidden transition-colors duration-700 ease-in-out  flex flex-col md:flex-row items-center justify-evenly gap-12",
+          "relative xl:container mx-auto p-4 md:p-16 md:rounded-2xl md:max-h-[528px] overflow-hidden transition-colors duration-700 ease-in-out  flex flex-col md:flex-row items-center justify-evenly gap-12",
           theme.bg
         )}
       >
@@ -69,17 +70,18 @@ export function VisaCard() {
           ))}
         </div>
 
-        <div className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-12">
+        <div className="relative z-10 flex flex-col-reverse md:flex-row items-center justify-between gap-12">
           <div className="w-full md:w-1/2 flex justify-center md:justify-start">
             <div
               key={theme.id}
-              className="relative w-[320px] md:w-[600px] h-[200px] md:h-[500px] animate-card-enter"
+              className="relative w-[320px] md:w-[600px] h-[200px] md:h-[400px] animate-card-enter"
             >
               <Image
                 src={theme.cardImage}
                 alt="Chainpaye Visa Card"
                 fill
                 priority
+                className="object-contain"
               />
 
               <div className="absolute bottom-[0px] md:bottom-[80px] left-1/2 -translate-x-1/2 w-[60%] h-[20px] bg-black/40 blur-xl rounded-[100%] z-0"></div>
@@ -115,9 +117,12 @@ export function VisaCard() {
               No need for Offramps
             </p>
 
-            <button className="bg-[#003DFF] text-white px-8 py-4 rounded-xl font-bold text-base transition-all flex items-center gap-2 shadow-lg">
+            <Link
+              href="/visa-cards"
+              className="bg-[#003DFF] text-white px-8 py-4 rounded-xl font-bold text-base transition-all flex items-center gap-2 shadow-lg w-fit"
+            >
               Request a visa card <ArrowRight className="h-5 w-5" />
-            </button>
+            </Link>
           </div>
         </div>
       </div>

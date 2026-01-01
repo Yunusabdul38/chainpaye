@@ -22,7 +22,7 @@ export function Navbar() {
   return (
     <header className="fixed top-0 z-50 w-full bg-[#EFEFF1]/80 backdrop-blur-md dark:bg-[#202024]/80">
       <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-6">
-        <Link href="#" className="flex items-center gap-2">
+        <Link href="/" className="flex items-center gap-2">
           <Image
             src="/assets/chainpaye.png"
             alt="Chainpaye"
@@ -35,19 +35,25 @@ export function Navbar() {
 
         <nav className="hidden md:flex items-center gap-8">
           <Link
-            href="#"
+            href="#visacard"
             className="text-sm font-medium text-[#111528]/80 hover:text-[#111528] dark:text-white/80 dark:hover:text-white"
           >
-            For Businesses
+            VisaCards
           </Link>
           <Link
-            href="#"
+            href="#off-ramp"
+            className="text-sm font-medium text-[#111528]/80 hover:text-[#111528] dark:text-white/80 dark:hover:text-white"
+          >
+            Off-ramp
+          </Link>
+          <Link
+            href="#use-cases"
             className="text-sm font-medium text-[#111528]/80 hover:text-[#111528] dark:text-white/80 dark:hover:text-white"
           >
             Use cases
           </Link>
           <Link
-            href="#"
+            href="#about"
             className="text-sm font-medium text-[#111528]/80 hover:text-[#111528] dark:text-white/80 dark:hover:text-white"
           >
             About
@@ -92,21 +98,28 @@ export function Navbar() {
         <div className="md:hidden border-t border-black/10 bg-[#EFEFF1] px-4 py-6 dark:border-white/10 dark:bg-[#202024]">
           <div className="flex flex-col space-y-4">
             <Link
-              href="#"
+              href="#visacard"
               className="text-base font-medium text-[#111528] dark:text-white"
               onClick={() => setMobileMenuOpen(false)}
             >
-              For Businesses
+              VisaCards
             </Link>
             <Link
-              href="#"
+              href="#off-ramp"
+              className="text-base font-medium text-[#111528] dark:text-white"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Off-ramp
+            </Link>
+            <Link
+              href="#use-cases"
               className="text-base font-medium text-[#111528] dark:text-white"
               onClick={() => setMobileMenuOpen(false)}
             >
               Use cases
             </Link>
             <Link
-              href="#"
+              href="#about"
               className="text-base font-medium text-[#111528] dark:text-white"
               onClick={() => setMobileMenuOpen(false)}
             >

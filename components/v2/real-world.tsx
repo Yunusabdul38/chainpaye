@@ -118,7 +118,10 @@ export function RealWorld() {
   };
 
   return (
-    <section className="pt-24 md:pt-10 px-4 overflow-hidden bg-[#F8F9FA] dark:bg-[#202024]">
+    <section
+      id="use-cases"
+      className="pt-24 md:pt-10 px-4 overflow-hidden bg-[#F8F9FA] dark:bg-[#202024]"
+    >
       <div className="container mx-auto max-w-6xl text-center">
         <h2 className="text-3xl font-bold mb-4 text-[#111528] dark:text-white">
           Real world application
