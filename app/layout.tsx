@@ -50,21 +50,21 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: "/assets/chainpaye.png" },
+      { url: "/assets/Favicon.png" },
       {
-        url: "/assets/chainpaye.png",
+        url: "/assets/Favicon.png",
         sizes: "192x192",
         type: "image/png",
       },
       {
-        url: "/assets/chainpaye.png",
+        url: "/assets/Favicon.png",
         sizes: "512x512",
         type: "image/png",
       },
     ],
     apple: [
       {
-        url: "/assets/chainpaye.png",
+        url: "/assets/Favicon.png",
         sizes: "180x180",
         type: "image/png",
       },
