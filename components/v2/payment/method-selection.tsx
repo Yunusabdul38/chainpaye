@@ -2,6 +2,9 @@
 
 import { CreditCard, Landmark} from "lucide-react";
 import Image from "next/image";
+import visa from "../../../public/assets/visa.png"
+import masterCard from "../../../public/assets/masterclass.png";
+import americaExpress from "../../../public/assets/american express.png";
 
 interface MethodSelectionProps {
   selectedMethod: "card" | "bank" | null;
@@ -64,14 +67,17 @@ export function MethodSelection({
                   className="h-5 w-auto"
                   onError={(e) => (e.currentTarget.style.display = "none")}
                 />
-                <div className="w-8 h-5 bg-white border rounded flex items-center justify-center text-[8px] font-bold text-blue-800 italic">
-                  VISA
+                <div className="w-8 h-5">
+                  {/* VISA */}
+                  <Image src={visa} alt="visa card" />
                 </div>
-                <div className="w-8 h-5 bg-white border rounded flex items-center justify-center text-[8px] font-bold text-red-500">
-                  MC
+                <div className="w-8 h-5">
+                  {/* MC */}
+                  <Image src={masterCard} alt="master card" />
                 </div>
-                <div className="w-8 h-5 bg-white border rounded flex items-center justify-center text-[8px] font-bold text-blue-500">
-                  AMEX
+                <div className="w-8 h-5">
+                  {/* AMEX */}
+                  <Image src={americaExpress} alt="AMEX card" />
                 </div>
               </div>
             </label>

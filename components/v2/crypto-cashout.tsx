@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { MessageCircle } from "lucide-react";
 import WhatsappIcon from "../whatsapp-icon";
 import { FadeIn } from "../animations/fade-in";
 
