@@ -11,7 +11,7 @@ const TIERS = [
   {
     id: "basic",
     name: "Basic",
-    price: 25,
+    price: 200,
     description: "For everybody",
     cardImage: "/assets/Solaris V2.png",
     bg: "bg-[#EFEFF1]",
@@ -26,7 +26,7 @@ const TIERS = [
   {
     id: "gold",
     name: "Gold",
-    price: 125,
+    price: 500,
     description: "For power users & professionals",
     cardImage: "/assets/GOLD V1.png",
     bg: "bg-[#BB7836]",
@@ -46,7 +46,7 @@ const TIERS = [
   {
     id: "platinum",
     name: "Platinum",
-    price: 250,
+    price: 1000,
     description: "For high-volume users",
     cardImage: "/assets/Platinum V2.png",
     bg: "bg-[#0047AB]",
