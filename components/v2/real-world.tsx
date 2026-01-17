@@ -127,7 +127,7 @@ export function RealWorld() {
           Real world application
         </h2>
         <p className="dark:text-[#BDBFC7] text-[#5A5F73]">
-          Discover how people and businesses use Chainpaye
+          Chainpaye by CAPITDAPPS BRIDGE LIMITED
         </p>
       </div>
 

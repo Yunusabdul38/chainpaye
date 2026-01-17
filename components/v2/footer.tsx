@@ -119,9 +119,19 @@ export function Footer() {
 
           <div className="h-24 md:h-48"></div>
 
-          <div className="flex justify-between text-base text-[#5A5F73] dark:text-[#BDBFC7] font-medium px-2 py-4 relative z-10 flex-col md:flex-row items-start">
-            <span>© 2025 Chainpaye</span>
-            <span>All Rights Reserved.</span>
+          <div className="flex justify-between text-base text-[#5A5F73] dark:text-[#BDBFC7] font-medium px-2 py-4 relative z-10 flex-col md:flex-row items-start gap-4">
+            <div className="flex flex-col items-start text-start">
+              <span>
+                © 2025 Chainpaye <br />
+                By
+              </span>
+              <span>CAPITDAPPS BRIDGE LIMITED</span>
+            </div>
+            <div className="flex flex-col items-start text-start">
+              <span>All Rights Reserved.</span>
+              <span>CAPITDAPPS BRIDGE LIMITED</span>
+            </div>
+            {/* <span></span> */}
           </div>
         </div>
       </div>

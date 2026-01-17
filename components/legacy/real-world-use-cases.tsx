@@ -7,7 +7,7 @@ export function RealWorldUseCases() {
             Real world application
           </h2>
           <p className="mt-4 text-zinc-600 dark:text-zinc-400">
-            Discover how people and businesses use Chainpaye
+            Chainpaye by CAPITDAPPS BRIDGE LIMITED
           </p>
         </div>
 

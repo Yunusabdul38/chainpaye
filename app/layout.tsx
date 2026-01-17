@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://chainpaye-six.vercel.app"),
   title: "Chainpaye - Global Payments for Africa",
   description:
-    "For Individuals. Send and receive money instantly via a simple WhatsApp message, just like chatting with a friend. No extra apps needed. Pay friends, family, or split bills with ChainPaye fast, secure, and easy.",
+    "For Individuals. Send and receive money instantly via a simple WhatsApp message, just like chatting with a friend. No extra apps needed. Pay friends, family, or split bills with ChainPaye fast, secure, and easy. By CAPITDAPPS BRIDGE LIMITED",
   keywords: [
     "cross-border payments",
     "Chainpaye",
@@ -22,11 +22,14 @@ export const metadata: Metadata = {
     "Africa payments",
     "Web3 payment",
     "crypto cashout",
+    "CAPITDAPPS",
+    "CAPITDAPPS BRIDGE LIMITED",
+    "capital"
   ],
   openGraph: {
     title: "Chainpaye - Global Payments for Africa",
     description:
-      "For Individuals. Send and receive money instantly via a simple WhatsApp message, just like chatting with a friend. No extra apps needed. Pay friends, family, or split bills with ChainPaye fast, secure, and easy.",
+      "For Individuals. Send and receive money instantly via a simple WhatsApp message, just like chatting with a friend. No extra apps needed. Pay friends, family, or split bills with ChainPaye fast, secure, and easy. By CAPITDAPPS BRIDGE LIMITED",
     url: "https://chainpaye.com",
     siteName: "Chainpaye",
     images: [
@@ -44,7 +47,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Chainpaye - Global Payments for Africa",
     description:
-      "For Individuals. Send and receive money instantly via a simple WhatsApp message, just like chatting with a friend. No extra apps needed. Pay friends, family, or split bills with ChainPaye fast, secure, and easy.",
+      "For Individuals. Send and receive money instantly via a simple WhatsApp message, just like chatting with a friend. No extra apps needed. Pay friends, family, or split bills with ChainPaye fast, secure, and easy. By CAPITDAPPS BRIDGE LIMITED",
     images: ["/assets/chainpaye.png"],
     creator: "@chainpaye",
   },
