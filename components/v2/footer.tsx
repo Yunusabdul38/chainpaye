@@ -47,11 +47,11 @@ export function Footer() {
         <div className="flex flex-col-reverse md:flex-row justify-between md:items-center mb-2 gap-4 md:gap-8 pt-4  md:dark:border-[#4C4C4C] md:dark:border-t ">
           <div className="flex gap-8 text-sm font-medium text-gray-[#5A5F73] dark:text-[#BDBFC7] flex-col md:flex-row md:border-none pt-3 md:pt-0 dark:border-[#4C4C4C] dark:border-t">
             <a
-              href="https://docs.google.com/document/d/1-TiefZJbhhH_KWShcrB9wY9-FQoPTrQzxyPCElNqGqI/edit?usp=drivesdk"
+              href="https://indigo-5.gitbook.io/chainpaye"
               className=" transition-colors"
-            target="_blank"
+              target="_blank"
             >
-             Privacy policy
+              Privacy policy
             </a>
             <a href="#" className=" transition-colors">
               Developers
